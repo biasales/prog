@@ -1,0 +1,17 @@
+include <stdio.h>
+include <stdlib.h>
+int main()
+{
+float dt=25000,juros;
+int meses,tmeses,i,dm=500;
+
+for(i=0;i<dt;i++){
+meses=dt*0.05-dm;
+i++;
+}
+
+tmeses=meses/12;
+
+printf("O numero de meses eh %d\n",tmeses);
+return 0;
+}
