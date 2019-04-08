@@ -1,0 +1,27 @@
+
+//nao terminei
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define N 10
+
+int main()
+{
+    int vet[N],i;
+    srand(time(NULL));
+
+     for (i=0;i<N;i++){
+        vet[i]=rand()%10;
+        printf("%d \n",vet[i]);
+    }
+
+    for (i=0;i<N-1;i++){
+        vet[i]=vet[rand];
+        printf("%d",vet[rand]);
+
+    }
+
+
+    return 0;
+}
