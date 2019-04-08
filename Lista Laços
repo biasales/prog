@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+    int main()
+{
+
+    int candidato,candidato1=0,candidato2=0,candidato3=0,candidato4=0,branco=0,nulo=0;
+
+    do {
+         scanf("%d",&candidato);
+
+
+    switch(candidato)
+    {
+
+    case 4314:
+        printf("voto no candidato 1 \n");
+        candidato1++;
+        break;
+
+    case 4315:
+        printf("voto no candidato 2");
+        candidato2++;
+        break;
+
+    case 4316:
+        printf("voto no candidato 3");
+        candidato3++;
+        break;
+
+    case 4317:
+        printf("voto no candidato 4");
+        candidato1++;
+        break;
+
+    case 0:
+        printf("voto nulo");
+        nulo++;
+        break;
+
+    case 1:
+        printf("voto no candidato 1");
+        branco++;
+        break;
+    }
+
+
+    }
+    while(candidato>=0);
+
+    printf("O total de votos do candidato 1 eh %d \n ",candidato1);
+    printf("O total de votos do candidato 2 eh %d \n ",candidato2);
+    printf("O total de votos do candidato 3 eh %d \n ",candidato3);
+    printf("O total de votos do candidato 4 eh %d \n ",candidato4);
+    printf("O total de votos de nulos eh %d \n ",nulo);
+    printf("O total de votos de brancos  eh %d \n ",branco);
+    
+    total=candidato1+candidato2+candidato3+candidato4+nulo+branco;    
+
+
+
+    return 0;
+}
