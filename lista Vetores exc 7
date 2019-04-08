@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define N 10
+
+int main()
+{
+    int v1[]={1,2,3,4,5,6,7,8,9,9}, v2[]={8,32,3,576,6,5,9,7,93,7};
+    int maior=1,menor,vetor,i=0;
+    scanf("%d",&vetor);
+
+    switch(vetor){
+    case 0:
+        for (i=0;i<N;i++){
+                if (v1[i]<=menor){
+                    menor = v1[i];
+                }
+                else if (v2[i]<=menor){
+                    menor = v2[i];
+                }
+    }
+    printf("o menor numero eh %d \n",menor);
+    break;
+
+    case 1:
+        for (i=0;i<N;i++){
+                if (maior<=v1[i]){
+                    maior = v1[i];
+                }
+                else if (maior<=v2[i]){
+                    maior = v2[i];
+                }
+    }
+    printf("o maior numero eh %d \n",maior);
+    break;
+
+    case 2:
+         for (i=0;i<N;i++){
+            v2[i]= v1[i]*2;
+
+            }
+
+            for (i=0;i<N;i++){
+            printf("%d \n ",v1[i]);
+            printf("%d \n",v2[i]);
+            }
+
+
+     break;
+    }
+
+    return 0;
+
+}
