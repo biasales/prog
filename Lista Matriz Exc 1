@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define N 10
+
+int main()
+{
+    int mat[N][N];
+    int i=0,j=0,a=0;
+
+    for (a=0;a<=100;a++){
+
+       mat[i][j]= a;
+       printf(" %d \t",mat[i][j]);
+
+         }
+
+    return 0;
+}
