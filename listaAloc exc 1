@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int * alocar_v_int (int qnt_alunos){
+     int *p = (int*) malloc (qnt_alunos * sizeof(int));
+     return p;
+
+
+}
+
+int main()
+{
+    int qnt_alunos,n=1;
+    int *vet;
+    int cont;
+
+
+    while(qnt_alunos > 0){
+    printf("Informe a quantidade de alunos");
+    scanf("%d",&qnt_alunos);
+
+    vet = alocar_v_int(qnt_alunos);
+    }
+
+    if (vet == NULL){
+    printf("Erro na memoria \n");
+    exit(1);
+
+    }
+
+    else {
+    for (i=0 ; i<n ; i++){
+    cont = *vet[i];
+    media = cont / qnt_alunos;
+    printf("a media eh %d",media);
+
+    }
+    }
+
+    return 0;
+}
