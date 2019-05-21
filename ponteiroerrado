@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define N 10
+
+int funcimpar(int *vet, int n,int *pontimpar){
+    int i;
+
+
+
+
+    for (i=0 ; i<N; i++){
+            if (vet[i] % 2 == 1){
+
+            *pontimpar = *pontimpar+1;
+            printf ("ponteiro %d",*pontimpar);
+         }
+            }
+
+}
+int main()
+{
+    int vet[N];
+    int i;
+    int n = 10;
+    int impar = 0;
+    int *pontimpar = &impar;
+
+
+    srand(time(NULL));
+    printf(" valor do ponteiro %d",*pontimpar);
+
+    for (i=0 ; i<N; i++){
+        vet[i] = rand() % 20;
+        printf("  %d",vet[i]);
+        }
+    funcimpar(vet,n,*pontimpar);
+    printf("imaparesssssss %d",*pontimpar);
+
+
+
+    return 0;
+}
