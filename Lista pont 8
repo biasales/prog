@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define N 10
+#define M 20
+
+int functroca(int *veta, int n,int *vetb){
+    int i=0;
+    int vetc[M];
+    int c = 10;
+
+    for (i=0 ; i<c; i++){
+    if(veta[i] % 2 == 0){
+    vetc[i] = veta[i];
+    }
+    }
+    
+    
+int main()
+{
+    int veta[N];
+    int vetb[N];
+
+    int i;
+
+    srand(time(NULL));
+    
+    
+    for (i=0 ; i<N; i++)
+    {
+        veta[i] = rand() % 100;
+        vetb[i] = rand() % 100;
+        
+        printf("%d",veta[i]);
+        printf("\n \n \n \n ");
+        printf("%d",vetb[i]);
+    }
+
+
+   funcv3(veta,n,vetb);
+
+    for (i=0 ; i<n; i++){
+        printf(" %d",veta[i]);
+
+        }
+
+        printf("\n \n \n \n ");
+
+    for (i=0 ; i<n; i++){
+        printf(" %d",vetb[i]);
+        }
+
+
+
+    return 0;
+}
