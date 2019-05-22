@@ -3,15 +3,18 @@
 #include <time.h>
 #define N 10
 
-int funcimpar(int *vet, int n,int *pontimpar){
+int funcimpar(int *vet, int n,int *pontimpar)
+{
     int i=0;
 
-for (i=0 ; i<N; i++){
-            if (vet[i] % 2 == 1){
+    for (i=0 ; i<N; i++)
+    {
+        if (vet[i] % 2 == 1)
+        {
 
-           (*pontimpar)++;
-         }
-            }
+            (*pontimpar)++;
+        }
+    }
     printf("pont %d \n",*pontimpar);
 
 
@@ -27,17 +30,18 @@ int main()
 
     srand(time(NULL));
     printf(" valor do ponteiro %d \n",*pontimpar);
-    funcimpar(vet,n,pontimpar);
 
-    for (i=0 ; i<N; i++){
+    for (i=0 ; i<N; i++)
+    {
         vet[i] = rand() % 20;
         printf(" %d",vet[i]);
-        }
+    }
 
-    printf("imaparesssssss %d \n \n " ,*pontimpar);
+    funcimpar(vet,n,pontimpar);
+
+    printf("imaparesssssss %d \n \n ",*pontimpar);
 
 
 
     return 0;
 }
-
