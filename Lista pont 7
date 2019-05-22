@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define N 3
+
+int functroca(int *veta, int n,int *vetb){
+    int i=0;
+    int vetaux[N];
+
+    for (i=0 ; i<n; i++){
+            vetaux[i] = veta[i];
+            veta[i]= vetb[i];
+            vetb[i]= vetaux[i];
+
+              }
+                }
+int main()
+{
+    int veta[N] = {0,1,2,3,4,5,6},vetb[N]= {3,4,5,6,7,8,9};
+    int i;
+    int n = N;
+
+    srand(time(NULL));
+
+    \
+   functroca(veta,n,vetb);
+
+    for (i=0 ; i<n; i++){
+        printf(" %d",veta[i]);
+
+        }
+
+        printf("\n \n \n \n ");
+
+    for (i=0 ; i<n; i++){
+        printf(" %d",vetb[i]);
+        }
+
+
+
+    return 0;
+}
