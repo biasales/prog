@@ -1,0 +1,31 @@
+/*  Leia uma string do usuário. Se a primeira letra da string for ”a”, maiúscula ou minúscula,
+exiba a string. Caso contrário, exiba a seguinte mensagem: “primeira letra não é a!”
+*/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+
+int main()
+{
+    char nome1[10];
+    int i;
+
+    printf("Insira seu nome : \n");
+    scanf("%[^\n]",nome1);
+
+
+    if( nome1[0] == 'A' || nome1[0] == 'a'){
+
+            printf("%s",nome1);
+
+    }
+
+    else{
+        printf("Primeira letra nao eh a");
+    }
+   return 0;
+}
