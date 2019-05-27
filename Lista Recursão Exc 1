@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <math.h>
+#include <string.h>
+
+int funcrec(int m,int n)
+{
+    int soma;
+
+    if(m-n == 0){
+        return 0;
+    }
+    return n + funcrec(m,n-1);
+
+}
+int main()
+{
+    int m,n;
+    int p;
+
+    printf("Digite M");
+    scanf("%d",&m);
+
+    printf("Digite N");
+    scanf("%d",&n);
+
+    printf("%d",funcrec(m,n));
+
+    return 0;
+}
