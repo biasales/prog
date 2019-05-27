@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <math.h>
+#include <string.h>
+
+int funcrec(int m,int n)
+{
+    int soma;
+
+    if(n == 0){
+        return 1;
+    }
+    return m * funcrec(m,n-1);
+
+}
+int main()
+{
+    int m,n;
+    int p;
+
+    printf("Digite a base");
+    scanf("%d",&m);
+
+    printf("Digite o expoente");
+    scanf("%d",&n);
+
+    printf("%d",funcrec(m,n));
+
+    return 0;
+}
