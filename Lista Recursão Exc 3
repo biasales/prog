@@ -1,0 +1,31 @@
+/* Dado um vetor de inteiros indexado pelos índices a e b, escreva uma função recursiva que
+encontra o menor elemento desse vetor.*/
+
+
+#include <stdio.h>
+
+int minimo (int tam, int vetor[])
+{
+   if (tam== 1)
+      return vetor[0];
+   else {
+      int x;
+      x = minimo (tam-1, vetor);
+      if (x < vetor[tam-1])
+         return x;
+      else
+         return vetor[tam-1];
+   }
+}
+
+int main( void )
+{
+    int vetor[]= {2,9,5,7,1};
+    int tam;
+    tam = 5;
+    int min = minimo( tam,vetor );
+
+    printf( "%d\n", min );
+
+    return 0;
+}
