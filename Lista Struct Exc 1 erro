@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct{
+    char* nome;
+    int idade;
+    float salario;
+    int cpf;
+    char sexo;
+
+}ficha;
+
+int main()
+{
+    ficha r1,r2;
+    int i;
+
+    r1.nome = "Mario Andrade";
+    r1.idade = 23;
+    r1.salario = 2550,40;
+    r1.cpf = 34256743;
+    r1.sexo = 'M';
+
+    scanf("%[^\n]",r2.nome);
+    scanf("%d",r2.idade);
+    scanf("%f",r2.salario);
+    scanf("%d",r2.cpf);
+    scanf("%c",r2.sexo);
+
+    printf("%s %d %2.f %d %c",r1.nome,r1.idade,r1.salario,r1.cpf,r1.sexo);
+
+    if (r1.salario > r2.salario){
+
+        printf("%s %d %2.f %d %c",r1.nome,r1.idade,r1.salario,r1.cpf,r1.sexo);
+    }
+    else {
+        printf("%s %d %2.f %d %c",r2.nome,r2.idade,r2.salario,r2.cpf,r2.sexo);
+
+
+    }
+    return 0;
+}
