@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+typedef struct{
+    int codcliente;
+    char* email;
+    int horas;
+    char pagweb;
+
+}cliente;
+
+int main()
+{
+    cliente cl;
+    float custo,resto;
+
+    cl.codcliente = 1987186;
+    cl.email = "idjdi@gmail.com";
+    cl.horas = 10;
+    cl.pagweb = 'S';
+
+    if(cl.horas <= 20){
+    custo = 35;
+    }
+
+    else {
+    resto = cl.horas - 20;
+    custo = custo + (resto*2.50);
+    }
+
+    if(cl.pagweb == 'S'){
+    custo = custo + 40;
+
+    }
+
+    printf("o custo eh %2.f",custo);
+    return 0;
+}
