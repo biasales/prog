@@ -1,0 +1,44 @@
+/* Crie uma struct com os campos dia e mês, ambos do tipo inteiro. Em seguida, declare um
+vetor do tipo de sua struct para cadastrar 40 pessoas. O campo dia deve ser inicializado
+randomicamente com um número de 1 a 28, 1 a 30 ou de 1 a 31 de acordo com o mês. Já o
+campo mês deve ser inicializado randomicamente com um número de 1 a 12. Considere
+que o ano em questão não é um ano bissexto. Em seguida, para cada mês do ano, exiba o
+dia do aniversário de cada pessoa e o número de pessoas que fazem aniversário no
+respectivo mês. */
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+typedef struct{
+    int dia;
+    int mes;
+
+}calendario;
+
+int main()
+{
+    calendario vet[40];
+    int i;
+    int j;
+    srand(time(NULL));
+
+    for(i=0;i<40;i++){
+    vet[i].mes = rand()%12;
+    vet[i].dia = rand()%30;
+
+    }
+
+    for(i=1;i<13;i++){
+    for(j=0;j<40;j++){
+    if (vet[j].mes == i );
+    printf("aniversario em %d : %d \n ",i,vet[j].dia);
+
+    }
+    }
+
+
+    return 0;
+}
