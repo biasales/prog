@@ -1,8 +1,10 @@
+
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef struct{
-    char* nome;
+    char *nome;
     int idade;
     float salario;
     int cpf;
@@ -17,24 +19,27 @@ int main()
 
     r1.nome = "Mario Andrade";
     r1.idade = 23;
-    r1.salario = 2550,40;
+    r1.salario = 2;
     r1.cpf = 34256743;
     r1.sexo = 'M';
 
-    scanf("%[^\n]",r2.nome);
-    scanf("%d",r2.idade);
-    scanf("%f",r2.salario);
-    scanf("%d",r2.cpf);
-    scanf("%c",r2.sexo);
+    scanf("%[^\n]",&r2.nome);
+    scanf("%d",&r2.idade);
+    scanf("%f",&r2.salario);
+    scanf("%d",&r2.cpf);
+    scanf("%[^\n]",&r2.sexo);
 
-    printf("%s %d %2.f %d %c",r1.nome,r1.idade,r1.salario,r1.cpf,r1.sexo);
+    printf("%s \n  %d \n %2.f  \n %d \n %c \n",r1.nome,r1.idade,r1.salario,r1.cpf,r1.sexo);
 
     if (r1.salario > r2.salario){
+            printf("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 
-        printf("%s %d %2.f %d %c",r1.nome,r1.idade,r1.salario,r1.cpf,r1.sexo);
+        printf(" o maior salario eh %s \n  %d \n %2.f \n %d \n  %c \n ",r1.nome,r1.idade,r1.salario,r1.cpf,r1.sexo);
     }
     else {
-        printf("%s %d %2.f %d %c",r2.nome,r2.idade,r2.salario,r2.cpf,r2.sexo);
+        printf(" o maior salario eh %s \n %d \n %2.f \n  %d \n  %c \n ",r2.nome,r2.idade,r2.salario,r2.cpf,r2.sexo);
+        printf("bbbbbbbb");
+        printf("ccccccccccccccccccccccccc");
 
 
     }
