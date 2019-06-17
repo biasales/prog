@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -8,7 +7,7 @@ typedef struct{
     int idade;
     float salario;
     int cpf;
-    char sexo;
+    char *sexo;
 
 }ficha;
 
@@ -23,11 +22,19 @@ int main()
     r1.cpf = 34256743;
     r1.sexo = 'M';
 
-    scanf("%[^\n]",&r2.nome);
+
+    char n[50];
+    char m[50];
+
+    scanf("%[^\n]",n);
     scanf("%d",&r2.idade);
     scanf("%f",&r2.salario);
     scanf("%d",&r2.cpf);
-    scanf("%[^\n]",&r2.sexo);
+    scanf("%[^\n]",m);
+    
+    
+    r2.nome = n;
+    r2.sexo = m;
 
     printf("%s \n  %d \n %2.f  \n %d \n %c \n",r1.nome,r1.idade,r1.salario,r1.cpf,r1.sexo);
 
@@ -45,3 +52,4 @@ int main()
     }
     return 0;
 }
+
