@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define N 10
+
+typedef struct{
+    int codcat;
+    char* nomeobra;
+    char* nomeautor;
+    char editora;
+    int area;
+
+}biblio;
+
+
+int main()
+{
+
+    biblio cadastro[biblio.area][j];
+    int j,i,area;
+    char nomeobra[50],nomeautor[50];
+
+    for(i=0;i<N;i++){
+
+    scanf("%d",area);
+
+    if(area == 0 || area == 1 || area == 2){
+
+     printf("cadastro com sucesso");
+    }
+    else{
+    printf("area de conhecimento invalida");
+    }
+
+
+
+    scanf("%d",cadastro[area][i].codcat);
+    scanf("%[\n]",&cadastro[area][i].nomeobra);
+    scanf("%[\n]",&cadastro[area][i].nomeautor);
+    scanf("%[\n]",cadastro[area][i].editora);
+
+    }
+    }
+        return 0;
+}
