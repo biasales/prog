@@ -1,0 +1,45 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+
+
+typedef struct {
+
+    char * nome;
+
+    int numero;
+
+} String;
+
+
+
+void coloca(String* nome) {
+
+    char n[30];
+
+    scanf("%s", n);
+
+    strcpy(nome->nome, n);
+
+}
+
+
+
+void mostra(String pessoa) {
+
+    printf("%s\n", pessoa.nome);
+
+}
+
+
+
+int main() {
+
+    String s;
+
+    coloca(&s);
+
+    mostra(s);
+
+}
