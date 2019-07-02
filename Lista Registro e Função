@@ -1,8 +1,7 @@
 #include <stdlib.h>
-
 #include <stdio.h>
-
 #include <string.h>
+#define MAX 10
 
 
 
@@ -18,7 +17,7 @@ typedef struct {
 
 void coloca(String* nome) {
 
-    char n[30];
+    char n[MAX];
 
     scanf("%s", n);
 
